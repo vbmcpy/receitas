@@ -2,5 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 
+# name space recipes para o template
 def home(request):
-    return HttpResponse("Teste de URL para ver se fixo na mente")
+    return render(request, 'recipes/home.html')
