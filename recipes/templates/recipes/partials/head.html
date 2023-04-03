@@ -176,5 +176,60 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-large);
         }
+
+        .recipe {
+            background: var(--color-white);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
+            transform: scale(1);
+            transition: all 300ms ease-in-out;
+
+        }
+
+        .recipe img {
+            max-width: 100%;
+        }
+
+        .recipe-list-item {
+            max-width: 64rem;
+        }
+
+        .recipe-list-item:hover {
+            transform: scale(1.02);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, .28);
+        }
+
+        .recipe-title-container {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+        }
+
+        .recipe-author {
+            padding: 0 var(--spacing-gutter-medium);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .recipe-author a {
+            color: var(--color-primary);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .recipe-author a:hover {
+            color: var(--color-primary-dark);
+
+        }
+
+
+        .recipe-content {
+            padding: var(--spacing-gutter-medium);
+            padding-top: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+
+        .recipe-author-item {
+            color: var(--color-gray-4);
+            margin-right: 1rem;
+        }
     </style>
 </head>
